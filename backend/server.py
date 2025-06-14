@@ -78,7 +78,7 @@ async def get_gemini_response(system_message: str, user_message: str, session_id
             api_key=api_key,
             session_id=session_id,
             system_message=system_message
-        ).with_model("gemini", "gemini-2.5-pro-preview-05-06").with_max_tokens(8192)
+        ).with_model("gemini", "gemini-1.5-flash").with_max_tokens(8192)
         
         # Create user message
         user_msg = UserMessage(text=user_message)
